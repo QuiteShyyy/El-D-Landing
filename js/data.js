@@ -3,311 +3,308 @@
    ============================================ */
 
 const PIZZERIA_DATA = {
-    categories: ['Todas', 'Pizzas', 'Promos Especiales', 'Pizzas Combinadas', 'Extras para Pizza', 'Fayna', 'Empanadas', 'Bebidas'],
+    categories: ['Todas', 'Pizzas', 'Pizzas Combinadas', 'Extras para Pizza', 'Fayna', 'Empanadas', 'Bebidas'],
     
     menu: [
-        // PROMOS ESPECIALES
+        // PIZZAS
         {
             id: 1,
-            name: 'Combo 1 - 3 Pre-Pizzas de tomate',
-            category: 'Promos Especiales',
-            description: '3 Pre-Pizzas de tomate Grande - POR MOSTRADOR Y EN EFECTIVO',
-            price: '$5.000',
-            image: './images/IMG_9105.jpg',
-            note: 'Por mostrador y en efectivo'
+            name: 'Muzzarella',
+            category: 'Pizzas',
+            description: 'Tomate, queso mozzarella - La clásica porteña',
+            price: 'Grande $13.500 | Individual $7.000',
+            image: './images/muzza_gd.jpg',
+            imageAlt: './images/muzza_ind.jpg'
         },
         {
             id: 2,
-            name: 'Combo 2 - 2 Pre-pizzas + 500grs Muzzarella',
-            category: 'Promos Especiales',
-            description: '2 Pre-pizzas de tomate + 500 grs de muzzarella - POR MOSTRADOR Y EN EFECTIVO',
-            price: '$9.000',
-            image: './images/IMG_9131.jpg',
-            note: 'Por mostrador y en efectivo'
-        },
-        {
-            id: 3,
-            name: 'Pre-pizza x unidad',
-            category: 'Promos Especiales',
-            description: '1 prepizza de tomate - POR MOSTRADOR Y EN EFECTIVO',
-            price: '$2.000',
-            image: './images/IMG_9137.jpg',
-            note: 'Por mostrador y en efectivo'
-        },
-        {
-            id: 4,
-            name: 'Gde Napolitana (8 porciones)',
-            category: 'Pizzas',
-            description: '1 pizza gde napolitana 8 porcion - Promocion valida por mostrador y en efectivo',
-            price: '$14.400',
-            image: './images/IMG_9100.jpg',
-            note: 'Por mostrador y en efectivo'
-        },
-        
-        // PIZZAS
-        {
-            id: 5,
-            name: 'Muzzarella',
-            category: 'Pizzas',
-            description: 'Tomate, queso mozzarella',
-            price: 'Grande $13.500 | Individual $7.000',
-            image: './images/IMG_8995.jpg'
-        },
-        {
-            id: 6,
-            name: 'Muzzarella c/ Huevo',
-            category: 'Pizzas',
-            description: 'Muzzarella con huevos duros',
-            price: 'Grande $15.500 | Individual $8.000',
-            image: './images/IMG_8999.jpg'
-        },
-        {
-            id: 7,
-            name: 'Muzzarella c/ Morrón',
-            category: 'Pizzas',
-            description: 'Muzzarella con morrones frescos',
-            price: 'Grande $19.700 | Individual $10.000',
-            image: './images/IMG_9007.jpg'
-        },
-        {
-            id: 8,
-            name: 'Fugazetta',
+            name: 'Fugazza',
             category: 'Pizzas',
             description: 'Cebolla de verdeo, tomate y queso',
             price: 'Grande $15.200 | Individual $7.800',
-            image: './images/IMG_9011.jpg'
+            image: './images/fugazza_gd.jpg'
         },
         {
-            id: 9,
-            name: 'Fugazetta c/ Jamón',
-            category: 'Pizzas',
-            description: 'Fugazetta tradicional con jamón cocido',
-            price: 'Grande $19.600 | Individual $10.000',
-            image: './images/IMG_9017.jpg'
-        },
-        {
-            id: 10,
-            name: 'Jamón',
-            category: 'Pizzas',
-            description: 'Tomate, mozzarella y jamón cocido',
-            price: 'Grande $18.000 | Individual $9.200',
-            image: './images/IMG_9027.jpg'
-        },
-        {
-            id: 11,
-            name: 'Jamón y Huevo',
-            category: 'Pizzas',
-            description: 'Jamón cocido y huevos duros',
-            price: 'Grande $22.000 | Individual $11.200',
-            image: './images/IMG_9031.jpg'
-        },
-        {
-            id: 12,
+            id: 3,
             name: 'Napolitana',
             category: 'Pizzas',
             description: 'Tomate, mozzarella, anchoas y orégano',
             price: 'Grande $18.000 | Individual $9.200',
-            image: './images/IMG_9043.jpg'
+            image: './images/napo_gd.jpg'
         },
         {
-            id: 13,
-            name: 'Napolitana c/ Jamón',
+            id: 4,
+            name: 'Jamón',
             category: 'Pizzas',
-            description: 'Pizza napolitana con jamón cocido',
-            price: 'Grande $25.000',
-            image: './images/IMG_9046.jpg'
+            description: 'Tomate, mozzarella y jamón cocido',
+            price: 'Grande $16.500 | Individual $8.500',
+            image: './images/jamon_gd.jpg'
+        },
+        {
+            id: 5,
+            name: 'Pepperoni',
+            category: 'Pizzas',
+            description: 'Pepperoni y queso',
+            price: 'Grande $18.000 | Individual $9.200',
+            image: './images/pepperoni_gd.jpg',
+            imageAlt: './images/pepperoni_ind.jpg'
+        },
+        {
+            id: 6,
+            name: 'Calabresa',
+            category: 'Pizzas',
+            description: 'Calabresa y queso',
+            price: 'Grande $17.500 | Individual $9.000',
+            image: './images/calabreza_gd.jpg',
+            imageAlt: './images/calabreza_ind.jpg'
+        },
+        {
+            id: 7,
+            name: 'Roquefort',
+            category: 'Pizzas',
+            description: 'Queso roquefort, nueces y cebolla',
+            price: 'Grande $19.000 | Individual $9.800',
+            image: './images/roquefort_gd.jpg'
+        },
+        {
+            id: 8,
+            name: 'Jamón y Morrón',
+            category: 'Pizzas',
+            description: 'Jamón, morrón y cebolla',
+            price: 'Grande $17.800 | Individual $9.200',
+            image: './images/jamonymorron_gd.jpg'
+        },
+        {
+            id: 9,
+            name: 'Huevo y Jamón',
+            category: 'Pizzas',
+            description: 'Jamón cocido y huevos duros',
+            price: 'Grande $19.500 | Individual $10.000',
+            image: './images/huevo_y_jamon_gd.jpg'
         },
         
         // PIZZAS COMBINADAS
         {
-            id: 14,
-            name: 'Pizza Combinada',
+            id: 10,
+            name: 'Carne a Cuchillo',
             category: 'Pizzas Combinadas',
-            description: 'Elige 2 sabores de pizza entre todas nuestras variedades',
-            price: 'Consulta en mostrador',
-            image: './images/IMG_9115.jpg',
-            note: 'Personalizable'
+            description: 'Carne a cuchillo, cebolla y pimiento',
+            price: 'Grande $21.000 | Individual $10.800',
+            image: './images/carne_cuchillo.jpg'
+        },
+        {
+            id: 11,
+            name: 'Carne Suave',
+            category: 'Pizzas Combinadas',
+            description: 'Carne molida, tomate y especias',
+            price: 'Grande $19.500 | Individual $10.000',
+            image: './images/carne_suave.jpg'
+        },
+        {
+            id: 12,
+            name: 'Diabla',
+            category: 'Pizzas Combinadas',
+            description: 'Picante con calabresa y ají',
+            price: 'Grande $19.200 | Individual $9.900',
+            image: './images/diabla.jpg'
+        },
+        {
+            id: 13,
+            name: 'Caprese',
+            category: 'Pizzas Combinadas',
+            description: 'Tomate, mozzarella fresca, rúcula y albahaca',
+            price: 'Grande $20.500 | Individual $10.500',
+            image: './images/capresse.jpg'
+        },
+        {
+            id: 14,
+            name: 'Pollo',
+            category: 'Pizzas Combinadas',
+            description: 'Pollo desmenuzado, cebolla y pimiento',
+            price: 'Grande $19.800 | Individual $10.200',
+            image: './images/pollo.jpg'
         },
         
         // EXTRAS PARA PIZZA
         {
             id: 15,
-            name: 'Agregado de Muzza',
+            name: 'Queso Extra',
             category: 'Extras para Pizza',
-            description: 'Agregado de 400 grs más de queso muzzarella',
-            price: 'Grande $5.000 | Chico $2.500',
-            image: './images/IMG_9086.jpg'
+            description: 'Porción extra de mozzarella',
+            price: '$3.500'
         },
         {
             id: 16,
-            name: 'Extra Salsa',
+            name: 'Jamón Extra',
             category: 'Extras para Pizza',
-            description: 'Agregado de doble salsa artesanal de tomates',
-            price: 'Grande $2.000 | Chico $1.200',
-            image: './images/IMG_9092.jpg'
+            description: 'Jamón cocido adicional',
+            price: '$4.000'
         },
         {
             id: 17,
-            name: 'Agregado de Morrón',
+            name: 'Calabresa Extra',
             category: 'Extras para Pizza',
-            description: 'Agregado de morrones frescos',
-            price: 'Grande $4.500 | Chico $2.300',
-            image: './images/IMG_9094.jpg'
+            description: 'Calabresa adicional',
+            price: '$4.500'
         },
         {
             id: 18,
-            name: 'Huevos',
+            name: 'Huevo Extra',
             category: 'Extras para Pizza',
-            description: 'Agregado de huevos duros',
-            price: 'Grande $3.400 | Chico $1.500',
-            image: './images/IMG_9098.jpg'
+            description: 'Huevo duro adicional',
+            price: '$2.500'
         },
         {
             id: 19,
-            name: 'Jamón',
+            name: 'Morrón Extra',
             category: 'Extras para Pizza',
-            description: 'Agregado de jamón cocido',
-            price: 'Grande $3.000 | Chico $2.000',
-            image: './images/IMG_9099.jpg'
+            description: 'Morrón adicional',
+            price: '$3.000'
         },
         
         // FAYNA
         {
             id: 20,
-            name: 'Fayna Simple',
+            name: 'Fayna',
             category: 'Fayna',
             description: 'Fayna simple de queso',
-            price: '$2.000',
-            image: './images/IMG_9113.jpg'
+            price: 'Grande $8.500 | Mediana $6.000'
         },
         {
             id: 21,
-            name: 'Fayna Rellena JyQ',
+            name: 'Fayna Rellena',
             category: 'Fayna',
             description: 'Fayna rellena de jamón y queso',
-            price: '$2.500',
-            image: './images/IMG_9114.jpg'
+            price: 'Grande $10.500 | Mediana $7.500',
+            image: './images/faina_rellena.jpg'
         },
         
         // EMPANADAS
         {
             id: 22,
-            name: 'Carne Suave',
+            name: 'Empanada de Humita',
             category: 'Empanadas',
-            description: 'Carne picada con cebolla, morrones y especias',
+            description: 'Choclo, queso y cebolla de verdeo',
             price: '$2.500',
-            image: './images/IMG_9047.jpg'
+            image: './images/humita.jpg'
         },
         {
             id: 23,
-            name: 'Pollo',
+            name: 'Empanada de Carne Suave',
             category: 'Empanadas',
-            description: 'Suprema de pollo con finas hierbas, cebolla y morrones rehogada',
+            description: 'Carne picada con cebolla, morrones y especias',
             price: '$2.500',
-            image: './images/IMG_9055.jpg'
+            image: './images/carne_suave.jpg'
         },
         {
             id: 24,
-            name: 'Jamón y Queso',
+            name: 'Empanada de Jamón y Queso',
             category: 'Empanadas',
             description: 'Jamón cocido y queso mozzarella',
             price: '$2.500',
-            image: './images/IMG_9061.jpg'
+            image: './images/jamonyqueso.jpg'
         },
         {
             id: 25,
-            name: 'Diabla',
+            name: 'Empanada de Diabla',
             category: 'Empanadas',
             description: 'Calabresa, queso y especias',
             price: '$2.500',
-            image: './images/IMG_9066.jpg'
+            image: './images/diabla.jpg'
         },
         {
             id: 26,
-            name: 'Caprese',
+            name: 'Empanada de Caprese',
             category: 'Empanadas',
             description: 'Queso mozzarella, albahaca y tomates',
             price: '$2.500',
-            image: './images/IMG_9074.jpg'
+            image: './images/capresse.jpg'
+        },
+        {
+            id: 27,
+            name: 'Empanada de Pollo',
+            category: 'Empanadas',
+            description: 'Suprema de pollo con finas hierbas y morrones',
+            price: '$2.500',
+            image: './images/pollo.jpg'
+        },
+        {
+            id: 28,
+            name: 'Empanada de Roquefort',
+            category: 'Empanadas',
+            description: 'Roquefort y nueces',
+            price: '$3.000',
+            image: './images/roquefort.jpg'
+        },
+        {
+            id: 29,
+            name: 'Empanada de Carne a Cuchillo',
+            category: 'Empanadas',
+            description: 'Carne a cuchillo, cebolla y pimiento',
+            price: '$2.800',
+            image: './images/carne_cuchillo.jpg'
         },
         
         // BEBIDAS
         {
-            id: 27,
-            name: 'Fanta 2,25lts',
-            category: 'Bebidas',
-            description: 'Bebida refrescante Fanta',
-            price: '$5.000',
-            image: './images/IMG_9077.jpg'
-        },
-        {
-            id: 28,
-            name: 'Levite Manzana 1,5lts',
-            category: 'Bebidas',
-            description: 'Jugo Levite sabor manzana',
-            price: '$3.500',
-            image: './images/IMG_9082.jpg'
-        },
-        {
-            id: 29,
-            name: 'Coca Cola Original 2.25lt',
-            category: 'Bebidas',
-            description: 'Refresco Coca Cola original',
-            price: '$5.000',
-            image: './images/IMG_9078.jpg'
-        },
-        {
             id: 30,
-            name: 'Levite Pera 1.5lt',
+            name: 'Coca Cola',
             category: 'Bebidas',
-            description: 'Jugo Levite sabor pera',
-            price: '$3.500',
-            image: './images/IMG_9083.jpg'
+            description: 'Refresco Coca Cola',
+            price: '250ml $2.000 | 1L $5.500'
+        },
+        {
+            id: 31,
+            name: 'Agua Mineral',
+            category: 'Bebidas',
+            description: 'Agua mineral con gas o sin gas',
+            price: '500ml $2.000 | 1.5L $4.500'
+        },
+        {
+            id: 32,
+            name: 'Jugo Levite',
+            category: 'Bebidas',
+            description: 'Jugo de frutas variado',
+            price: '1.5L $3.500'
         }
     ],
     
     specialties: [
         {
             id: 1,
-            title: 'Combo 1 - 3 Pre-Pizzas',
-            description: '3 Pre-Pizzas de tomate - POR MOSTRADOR Y EN EFECTIVO',
-            price: '$5.000',
-            image: './images/IMG_9105.jpg'
+            title: 'Muzzarella',
+            description: 'La clásica porteña con ingredientes frescos',
+            image: './images/muzza_gd.jpg'
         },
         {
             id: 2,
-            title: 'Combo 2 - 2 Pre-pizzas + Muzzarella',
-            description: '2 Pre-pizzas de tomate + 500 grs de muzzarella - POR MOSTRADOR Y EN EFECTIVO',
-            price: '$9.000',
-            image: './images/IMG_9131.jpg'
+            title: 'Napolitana',
+            description: 'Con anchoas y orégano, receta tradicional',
+            image: './images/napo_gd.jpg'
         },
         {
             id: 3,
-            title: 'Gde Napolitana (8 porciones)',
-            description: 'Pizza gde napolitana 8 porcion - Promocion valida por mostrador y en efectivo',
-            price: '$14.400',
-            image: './images/IMG_9100.jpg'
+            title: 'Empanadas Caseras',
+            description: 'Preparadas diariamente con los mejores ingredientes',
+            image: './images/humita.jpg'
         },
         {
             id: 4,
-            title: 'Jamón y Huevo',
-            description: 'Jamón cocido y huevos duros en una pizza cremosa',
-            price: 'Grande $22.000 | Individual $11.200',
-            image: './images/IMG_9103.jpg'
+            title: 'Jamón y Morrón',
+            description: 'Combinación fresca y sabrosa',
+            image: './images/jamonymorron_gd.jpg'
         },
         {
             id: 5,
-            title: 'Fugazetta c/ Jamón',
-            description: 'Fugazetta tradicional con jamón cocido',
-            price: 'Grande $19.600 | Individual $10.000',
-            image: './images/IMG_9113.jpg'
+            title: 'Roquefort',
+            description: 'Sabor único con queso roquefort premium',
+            image: './images/roquefort_gd.jpg'
         },
         {
             id: 6,
-            title: 'Napolitana c/ Jamón',
-            description: 'Pizza napolitana con jamón cocido, anchoas y orégano',
-            price: 'Grande $25.000',
-            image: './images/IMG_9104.jpg'
+            title: 'Calabresa',
+            description: 'El sabor auténtico argentino',
+            image: './images/calabreza_gd.jpg'
         }
     ],
     testimonials: [
