@@ -1,0 +1,19 @@
+{
+  "name": "el-dante-pizzeria",
+  "version": "1.0.0",
+  "description": "Sitio web oficial de El Dante Pizzería - Desde 2005",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "pizzeria",
+    "el-dante",
+    "buenos-aires",
+    "website"
+  ],
+  "author": "QuiteShyyy",
+  "license": "MIT"
+}
