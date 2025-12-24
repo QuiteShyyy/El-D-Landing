@@ -88,7 +88,7 @@ function createProductCard(product) {
     }
     
     html += `
-            <a href="https://eldante.alacarta.online/local/3e009562ca/" target="_blank" class="menu-item__cta">Ver Detalles</a>
+            <a href="https://eldante.alacarta.online" target="_blank" class="menu-item__cta">Ver Detalles</a>
         </div>
     `;
     

@@ -102,7 +102,7 @@ El-D-Landing/
 ## 🔗 Enlaces Útiles
 
 - 🌐 Sitio Web: (En desarrollo)
-- 🍽️ Pedidos: https://eldante.alacarta.online/local/3e009562ca/
+- 🍽️ Pedidos: https://eldante.alacarta.online
 - 💬 WhatsApp: +54 9 1158956171
 - 📸 Instagram: @eldanteempanadasok
 
