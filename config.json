@@ -1,0 +1,44 @@
+{
+  "name": "pizzeria-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page moderna y escalable para una pizzería con animaciones JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html",
+    "build": "echo 'Run this command to build for production'",
+    "dev": "echo 'Run this command for development'"
+  },
+  "keywords": [
+    "pizzeria",
+    "landing-page",
+    "responsive",
+    "carousel",
+    "animations",
+    "vanilla-javascript"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "structure": {
+    "html": "Estructura semántica moderna con secciones claramente definidas",
+    "css": "Modularizado por secciones, con variables CSS globales para fácil personalización",
+    "javascript": "Orientado a objetos con clases reutilizables y escalables",
+    "images": "Utilizando imágenes externas de Unsplash y DiceBear para avatares"
+  },
+  "features": [
+    "Navbar responsive con menú hamburguesa",
+    "Sección Hero con animaciones parallax",
+    "Grid de menú de pizzas con hover effects",
+    "Carrusel automático de especialidades",
+    "Sección de testimonios",
+    "Formulario de contacto funcional",
+    "Animaciones de scroll (Intersection Observer)",
+    "Completamente responsivo"
+  ],
+  "browser-support": [
+    "Chrome 90+",
+    "Firefox 88+",
+    "Safari 14+",
+    "Edge 90+",
+    "Mobile browsers (iOS Safari, Chrome Mobile)"
+  ]
+}

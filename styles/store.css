@@ -1,0 +1,264 @@
+/* ============================================
+   ESTILOS PARA PÁGINA STORE
+   ============================================ */
+
+.page-header--store {
+    margin-top: 70px;
+}
+
+/* Store Menu Filters */
+.menu-filters {
+    padding: 40px 20px;
+    background: #f8f8f8;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-filters__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.menu-filters__btn {
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    background: white;
+    color: #333;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu-filters__btn:hover {
+    border-color: #a97bc4;
+    color: #a97bc4;
+}
+
+.menu-filters__btn--active {
+    background: #a97bc4;
+    color: white;
+    border-color: #a97bc4;
+}
+
+/* Store Menu Grid */
+.menu {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-item__content {
+    padding: 20px;
+}
+
+.menu-item__category {
+    font-size: 0.75rem;
+    color: #6b3fa8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.menu-item__name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.menu-item__description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    min-height: 45px;
+}
+
+.menu-item__price {
+    font-size: 1.2rem;
+    color: #6b3fa8;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.menu-item__note {
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 15px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.menu-item__cta {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    background: #6b3fa8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    font-weight: 500;
+}
+
+.menu-item__cta:hover {
+    background: #5a3499;
+}
+
+/* Empty State */
+.menu__empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.menu__empty h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu__empty p {
+    font-size: 1rem;
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .menu__grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-filters {
+        padding: 30px 15px;
+    }
+
+    .menu-filters__container {
+        gap: 10px;
+    }
+
+    .menu-filters__btn {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+
+    .menu {
+        padding: 40px 15px;
+    }
+
+    .menu__grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .menu-item__name {
+        font-size: 1.1rem;
+    }
+
+    .menu-item__image {
+        height: 200px;
+    }
+
+    .menu-item__content {
+        padding: 15px;
+    }
+
+    .menu-item__description {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header--store {
+        margin-top: 60px;
+    }
+
+    .menu {
+        padding: 30px 10px;
+    }
+
+    .menu__grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .menu-filters {
+        padding: 20px 10px;
+    }
+
+    .menu-filters__container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .menu-filters__btn {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
+
+    .menu-item {
+        border-radius: 6px;
+    }
+
+    .menu-item__image {
+        height: 200px;
+    }
+
+    .menu-item__content {
+        padding: 15px;
+    }
+
+    .menu-item__name {
+        font-size: 1rem;
+    }
+
+    .menu-item__price {
+        font-size: 1.1rem;
+    }
+
+    .menu-item__cta {
+        padding: 12px 12px;
+        font-size: 0.9rem;
+    }
+}

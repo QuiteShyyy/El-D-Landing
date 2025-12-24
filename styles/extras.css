@@ -1,0 +1,287 @@
+/* ============================================
+   ESTILOS ADICIONALES (RIPPLE EFFECT Y OTROS)
+   ============================================ */
+
+/* Ripple Effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
+}
+
+/* Selection */
+::selection {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Focus visible */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Reducir movimiento si está configurado */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Modo oscuro (opcional) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #ffffff 0%, #f0ecff 100%) !important;
+    }
+
+    .menu__item,
+    .testimonial__card {
+        background: #ffffff !important;
+        color: #2c2416 !important;
+    }
+
+    .menu__name,
+    .carousel__title {
+        color: #fff;
+    }
+}
+
+/* Print styles */
+@media print {
+    nav,
+    footer,
+    .carousel__btn,
+    .whatsapp-btn {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+    }
+}
+
+/* ============================================
+   MAPS SECTION
+   ============================================ */
+
+.maps-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f9f7fc 0%, #f5f1fa 100%);
+}
+
+.maps-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.maps-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.maps-info {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(139, 107, 166, 0.1);
+    border: 1px solid rgba(139, 107, 166, 0.05);
+}
+
+.maps-info h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.maps-address {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.maps-contact {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(139, 107, 166, 0.1);
+}
+
+.maps-contact p {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.maps-contact a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.maps-contact a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.maps-embed {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(139, 107, 166, 0.15);
+    border: 1px solid rgba(139, 107, 166, 0.05);
+}
+
+.maps-embed iframe {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .maps-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .maps-embed iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .maps-section {
+        padding: 3rem 1rem;
+    }
+
+    .maps-info {
+        padding: 2rem;
+    }
+
+    .maps-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .maps-embed iframe {
+        height: 300px;
+    }
+}
+
+/* ============================================
+   WHATSAPP FLOATING BUTTON
+   ============================================ */
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #25d366 0%, #20ba58 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+    gap: 8px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    animation: slideInUp 0.6s ease-out 0.8s both;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-btn:active {
+    transform: scale(0.95);
+}
+
+.whatsapp-btn svg {
+    width: 28px;
+    height: 28px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.whatsapp-btn span {
+    display: none;
+}
+
+/* Mostrar texto en pantallas más grandes */
+@media (min-width: 768px) {
+    .whatsapp-btn {
+        width: auto;
+        padding: 14px 20px;
+        border-radius: 50px;
+    }
+    
+    .whatsapp-btn span {
+        display: inline;
+        font-weight: 700;
+    }
+}
+
+/* Mobile - mantener como círculo */
+@media (max-width: 767px) {
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 56px;
+        height: 56px;
+    }
+}
