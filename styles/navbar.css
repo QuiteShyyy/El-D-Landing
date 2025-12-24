@@ -116,6 +116,22 @@
    ============================================ */
 
 @media (max-width: 768px) {
+    .navbar__container {
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .navbar__logo {
+        gap: var(--spacing-sm);
+    }
+
+    .navbar__logo-image {
+        height: 50px;
+    }
+
+    .navbar__logo-text {
+        font-size: 1.3rem;
+    }
+
     .navbar__menu {
         position: absolute;
         top: 60px;
@@ -141,5 +157,28 @@
 
     .navbar__link::after {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar__container {
+        padding: 8px 12px;
+    }
+
+    .navbar__logo {
+        gap: 6px;
+    }
+
+    .navbar__logo-image {
+        height: 45px;
+    }
+
+    .navbar__logo-text {
+        font-size: 1.1rem;
+    }
+
+    .navbar__toggle span {
+        width: 20px;
+        height: 2.5px;
     }
 }
