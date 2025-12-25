@@ -1,7 +1,7 @@
 /* ============================================
    DATOS DE LA PIZZERÍA
    ============================================ */
-
+// Versión: 2025-12-25 v3
 const PIZZERIA_DATA = {
     categories: ['Todas', 'Pizzas', 'Pizzas Combinadas', 'Extras para Pizza', 'Fayna', 'Empanadas', 'Bebidas'],
     
@@ -84,50 +84,10 @@ const PIZZERIA_DATA = {
         },
         
         // PIZZAS COMBINADAS
-        {
-            id: 10,
-            name: 'Carne a Cuchillo',
-            category: 'Pizzas Combinadas',
-            description: 'Carne a cuchillo, cebolla y pimiento',
-            price: 'Grande $21.000 | Individual $10.800',
-            image: './images/carne_cuchillo.jpg'
-        },
-        {
-            id: 11,
-            name: 'Carne Suave',
-            category: 'Pizzas Combinadas',
-            description: 'Carne molida, tomate y especias',
-            price: 'Grande $19.500 | Individual $10.000',
-            image: './images/carne_suave.jpg'
-        },
-        {
-            id: 12,
-            name: 'Diabla',
-            category: 'Pizzas Combinadas',
-            description: 'Picante con calabresa y ají',
-            price: 'Grande $19.200 | Individual $9.900',
-            image: './images/diabla.jpg'
-        },
-        {
-            id: 13,
-            name: 'Caprese',
-            category: 'Pizzas Combinadas',
-            description: 'Tomate, mozzarella fresca, rúcula y albahaca',
-            price: 'Grande $20.500 | Individual $10.500',
-            image: './images/capresse.jpg'
-        },
-        {
-            id: 14,
-            name: 'Pollo',
-            category: 'Pizzas Combinadas',
-            description: 'Pollo desmenuzado, cebolla y pimiento',
-            price: 'Grande $19.800 | Individual $10.200',
-            image: './images/pollo.jpg'
-        },
         
         // EXTRAS PARA PIZZA
         {
-            id: 15,
+            id: 12,
             name: 'Queso Extra',
             category: 'Extras para Pizza',
             description: 'Porción extra de mozzarella',
@@ -135,7 +95,7 @@ const PIZZERIA_DATA = {
             image: './images/muzzarella.jpg'
         },
         {
-            id: 16,
+            id: 13,
             name: 'Jamón Extra',
             category: 'Extras para Pizza',
             description: 'Jamón cocido adicional',
@@ -143,7 +103,7 @@ const PIZZERIA_DATA = {
             image: './images/jamon.jpg'
         },
         {
-            id: 17,
+            id: 14,
             name: 'Calabresa Extra',
             category: 'Extras para Pizza',
             description: 'Calabresa adicional',
@@ -151,7 +111,7 @@ const PIZZERIA_DATA = {
             image: './images/calabresa.jpg'
         },
         {
-            id: 18,
+            id: 15,
             name: 'Huevo Extra',
             category: 'Extras para Pizza',
             description: 'Huevo duro adicional',
@@ -159,7 +119,7 @@ const PIZZERIA_DATA = {
             image: './images/huevo.jpg'
         },
         {
-            id: 19,
+            id: 16,
             name: 'Morrón Extra',
             category: 'Extras para Pizza',
             description: 'Morrón adicional',
@@ -169,7 +129,7 @@ const PIZZERIA_DATA = {
         
         // FAYNA
         {
-            id: 20,
+            id: 17,
             name: 'Fayna Simple',
             category: 'Fayna',
             description: 'Fayna simple',
@@ -177,7 +137,7 @@ const PIZZERIA_DATA = {
             image: './images/faina_rellena.jpg'
         },
         {
-            id: 21,
+            id: 18,
             name: 'Fayna Rellena',
             category: 'Fayna',
             description: 'Fayna rellena de jamón y queso',
@@ -187,47 +147,15 @@ const PIZZERIA_DATA = {
         
         // EMPANADAS
         {
-            id: 22,
-            name: 'Empanada de Humita',
+            id: 10,
+            name: 'Empanada de Carne a Cuchillo',
             category: 'Empanadas',
-            description: 'Salsa blanca y choclo en grano amarillo',
+            description: 'Carne a cuchillo, cebolla y pimiento',
             price: '$2.500',
-            image: './images/humita.jpg'
+            image: './images/carne_cuchillo.jpg'
         },
         {
-            id: 23,
-            name: 'Empanada de Roquefort',
-            category: 'Empanadas',
-            description: 'Roquefort y queso muzzarella',
-            price: '$2.500',
-            image: './images/roquefort.jpg'
-        },
-        {
-            id: 24,
-            name: 'Empanada de Carne Suave',
-            category: 'Empanadas',
-            description: 'Carne picada con cebolla, morrones y especias',
-            price: '$2.500',
-            image: './images/carne_suave.jpg'
-        },
-        {
-            id: 25,
-            name: 'Empanada de Pollo',
-            category: 'Empanadas',
-            description: 'Suprema de pollo con finas hierbas, cebolla y morrones rehogada',
-            price: '$2.500',
-            image: './images/pollo.jpg'
-        },
-        {
-            id: 26,
-            name: 'Empanada de Jamón y Queso',
-            category: 'Empanadas',
-            description: 'Jamón cocido y queso mozzarella',
-            price: '$2.500',
-            image: './images/jamonyqueso.jpg'
-        },
-        {
-            id: 27,
+            id: 11,
             name: 'Empanada de Diabla',
             category: 'Empanadas',
             description: 'Calabresa, queso y especias',
@@ -235,7 +163,47 @@ const PIZZERIA_DATA = {
             image: './images/diabla.jpg'
         },
         {
-            id: 28,
+            id: 20,
+            name: 'Empanada de Humita',
+            category: 'Empanadas',
+            description: 'Salsa blanca y choclo en grano amarillo',
+            price: '$2.500',
+            image: './images/humita.jpg'
+        },
+        {
+            id: 21,
+            name: 'Empanada de Roquefort',
+            category: 'Empanadas',
+            description: 'Roquefort y queso muzzarella',
+            price: '$2.500',
+            image: './images/roquefort.jpg'
+        },
+        {
+            id: 22,
+            name: 'Empanada de Carne Suave',
+            category: 'Empanadas',
+            description: 'Carne picada con cebolla, morrones y especias',
+            price: '$2.500',
+            image: './images/carne_suave.jpg'
+        },
+        {
+            id: 23,
+            name: 'Empanada de Pollo',
+            category: 'Empanadas',
+            description: 'Suprema de pollo con finas hierbas, cebolla y morrones rehogada',
+            price: '$2.500',
+            image: './images/pollo.jpg'
+        },
+        {
+            id: 24,
+            name: 'Empanada de Jamón y Queso',
+            category: 'Empanadas',
+            description: 'Jamón cocido y queso mozzarella',
+            price: '$2.500',
+            image: './images/jamonyqueso.jpg'
+        },
+        {
+            id: 25,
             name: 'Empanada de Caprese',
             category: 'Empanadas',
             description: 'Queso mozzarella, albahaca y tomates',
@@ -243,17 +211,17 @@ const PIZZERIA_DATA = {
             image: './images/capresse.jpg'
         },
         {
-            id: 29,
+            id: 26,
             name: 'Empanada de Bolognesa',
             category: 'Empanadas',
             description: 'Canasita rellena de carne con salsa boloñesa',
             price: '$2.500',
-            image: './images/bolognesa.jpg'
+            image: './images/bolognesa.jpeg'
         },
         
         // BEBIDAS
         {
-            id: 30,
+            id: 27,
             name: 'Coca Cola',
             category: 'Bebidas',
             description: 'Refresco Coca Cola Original 2.25lt',
@@ -261,7 +229,7 @@ const PIZZERIA_DATA = {
             image: './images/coca225.jpg'
         },
         {
-            id: 31,
+            id: 28,
             name: 'Cerveza Schneider',
             category: 'Bebidas',
             description: 'Cerveza Schneider Premium - Bebida alcohólica',
@@ -269,7 +237,7 @@ const PIZZERIA_DATA = {
             image: './images/schneider.png'
         },
         {
-            id: 32,
+            id: 29,
             name: 'Jugo Levite Manzana',
             category: 'Bebidas',
             description: 'Jugo de manzana Levite',
@@ -277,7 +245,7 @@ const PIZZERIA_DATA = {
             image: './images/levite_manzana.webp'
         },
         {
-            id: 33,
+            id: 30,
             name: 'Jugo Levite Pera',
             category: 'Bebidas',
             description: 'Jugo de pera Levite',

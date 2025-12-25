@@ -5,37 +5,67 @@
 let allProducts = [];
 let currentFilter = 'Todas';
 
-// Esperar a que data.js esté cargado
-document.addEventListener('DOMContentLoaded', function() {
-    if (typeof PIZZERIA_DATA !== 'undefined') {
-        initializeStore();
-    } else {
-        console.error('PIZZERIA_DATA no cargado');
-    }
-});
+console.log('store.js cargado');
+
+// Esperar a que el DOM esté listo
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initStore);
+} else {
+    // DOM ya está listo
+    initStore();
+}
+
+function initStore() {
+    console.log('initStore iniciado');
+    
+    // Esperar a que PIZZERIA_DATA esté disponible
+    let attempts = 0;
+    const checkData = setInterval(() => {
+        attempts++;
+        console.log('Intento ' + attempts + ' para verificar PIZZERIA_DATA');
+        
+        if (typeof PIZZERIA_DATA !== 'undefined' && PIZZERIA_DATA && PIZZERIA_DATA.menu) {
+            console.log('✅ PIZZERIA_DATA encontrado. Productos:', PIZZERIA_DATA.menu.length);
+            clearInterval(checkData);
+            initializeStore();
+        } else if (attempts > 50) {
+            console.error('❌ PIZZERIA_DATA no se pudo cargar después de 50 intentos');
+            clearInterval(checkData);
+            showError('Error al cargar datos');
+        }
+    }, 200);
+}
 
 function initializeStore() {
+    console.log('Inicializando store...');
+    
+    if (!PIZZERIA_DATA || !PIZZERIA_DATA.menu) {
+        console.error('PIZZERIA_DATA no es válido');
+        showError('Datos inválidos');
+        return;
+    }
+    
     allProducts = PIZZERIA_DATA.menu;
+    console.log('Productos cargados:', allProducts.length);
     
     // Renderizar productos iniciales
     renderProducts(allProducts);
     
     // Agregar event listeners a botones de filtro
     const filterButtons = document.querySelectorAll('.menu-filters__btn');
+    console.log('Botones de filtro encontrados:', filterButtons.length);
+    
     filterButtons.forEach(btn => {
         btn.addEventListener('click', function() {
-            // Remover clase activa de todos los botones
             filterButtons.forEach(b => b.classList.remove('menu-filters__btn--active'));
-            
-            // Agregar clase activa al botón clickeado
             this.classList.add('menu-filters__btn--active');
             
-            // Obtener el filtro
             const filter = this.getAttribute('data-filter');
+            console.log('Filtro seleccionado:', filter);
             currentFilter = filter;
             
-            // Filtrar y renderizar
             const filtered = filterProducts(filter);
+            console.log('Productos filtrados:', filtered.length);
             renderProducts(filtered);
         });
     });
@@ -49,10 +79,19 @@ function filterProducts(category) {
 }
 
 function renderProducts(products) {
+    console.log('Renderizando', products.length, 'productos');
+    
     const menuGrid = document.getElementById('menuGrid');
+    
+    if (!menuGrid) {
+        console.error('❌ menuGrid no encontrado en el DOM');
+        return;
+    }
+    
     menuGrid.innerHTML = '';
     
     if (products.length === 0) {
+        console.log('No hay productos para esta categoría');
         menuGrid.innerHTML = `
             <div class="menu__empty" style="grid-column: 1 / -1;">
                 <h3>No hay productos en esta categoría</h3>
@@ -66,13 +105,14 @@ function renderProducts(products) {
         const productCard = createProductCard(product);
         menuGrid.appendChild(productCard);
     });
+    
+    console.log('✅ Productos renderizados');
 }
 
 function createProductCard(product) {
     const card = document.createElement('div');
     card.className = 'menu-item';
     
-    // Construir el contenido HTML
     let html = `
         <img src="${product.image}" alt="${product.name}" class="menu-item__image">
         <div class="menu-item__content">
@@ -82,7 +122,6 @@ function createProductCard(product) {
             <div class="menu-item__price">${product.price}</div>
     `;
     
-    // Agregar nota si existe
     if (product.note) {
         html += `<div class="menu-item__note">${product.note}</div>`;
     }
@@ -94,4 +133,11 @@ function createProductCard(product) {
     
     card.innerHTML = html;
     return card;
+}
+
+function showError(message) {
+    const menuGrid = document.getElementById('menuGrid');
+    if (menuGrid) {
+        menuGrid.innerHTML = `<div class="menu__empty" style="grid-column: 1 / -1;"><h3>${message}</h3></div>`;
+    }
 }
