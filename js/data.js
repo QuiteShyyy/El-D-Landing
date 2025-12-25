@@ -190,12 +190,20 @@ const PIZZERIA_DATA = {
             id: 22,
             name: 'Empanada de Humita',
             category: 'Empanadas',
-            description: 'Choclo, queso y cebolla de verdeo',
+            description: 'Salsa blanca y choclo en grano amarillo',
             price: '$2.500',
             image: './images/humita.jpg'
         },
         {
             id: 23,
+            name: 'Empanada de Roquefort',
+            category: 'Empanadas',
+            description: 'Roquefort y queso muzzarella',
+            price: '$2.500',
+            image: './images/roquefort.jpg'
+        },
+        {
+            id: 24,
             name: 'Empanada de Carne Suave',
             category: 'Empanadas',
             description: 'Carne picada con cebolla, morrones y especias',
@@ -203,7 +211,15 @@ const PIZZERIA_DATA = {
             image: './images/carne_suave.jpg'
         },
         {
-            id: 24,
+            id: 25,
+            name: 'Empanada de Pollo',
+            category: 'Empanadas',
+            description: 'Suprema de pollo con finas hierbas, cebolla y morrones rehogada',
+            price: '$2.500',
+            image: './images/pollo.jpg'
+        },
+        {
+            id: 26,
             name: 'Empanada de Jamón y Queso',
             category: 'Empanadas',
             description: 'Jamón cocido y queso mozzarella',
@@ -211,7 +227,7 @@ const PIZZERIA_DATA = {
             image: './images/jamonyqueso.jpg'
         },
         {
-            id: 25,
+            id: 27,
             name: 'Empanada de Diabla',
             category: 'Empanadas',
             description: 'Calabresa, queso y especias',
@@ -219,7 +235,7 @@ const PIZZERIA_DATA = {
             image: './images/diabla.jpg'
         },
         {
-            id: 26,
+            id: 28,
             name: 'Empanada de Caprese',
             category: 'Empanadas',
             description: 'Queso mozzarella, albahaca y tomates',
@@ -227,28 +243,12 @@ const PIZZERIA_DATA = {
             image: './images/capresse.jpg'
         },
         {
-            id: 27,
-            name: 'Empanada de Pollo',
-            category: 'Empanadas',
-            description: 'Suprema de pollo con finas hierbas y morrones',
-            price: '$2.500',
-            image: './images/pollo.jpg'
-        },
-        {
-            id: 28,
-            name: 'Empanada de Roquefort',
-            category: 'Empanadas',
-            description: 'Roquefort y nueces',
-            price: '$3.000',
-            image: './images/roquefort.jpg'
-        },
-        {
             id: 29,
-            name: 'Empanada de Carne a Cuchillo',
+            name: 'Empanada de Bolognesa',
             category: 'Empanadas',
-            description: 'Carne a cuchillo, cebolla y pimiento',
-            price: '$2.800',
-            image: './images/carne_cuchillo.jpg'
+            description: 'Canasita rellena de carne con salsa boloñesa',
+            price: '$2.500',
+            image: './images/bolognesa.jpg'
         },
         
         // BEBIDAS
