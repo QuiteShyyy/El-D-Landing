@@ -256,10 +256,10 @@ const PIZZERIA_DATA = {
         },
         {
             id: 31,
-            name: 'Agua Mineral Schneider',
+            name: 'Cerveza Schneider',
             category: 'Bebidas',
-            description: 'Agua mineral Schneider con gas o sin gas',
-            price: '500ml $2.000 | 1.5L $4.500',
+            description: 'Cerveza Schneider Premium - Bebida alcohólica',
+            price: '340ml $2.500 | 500ml $3.500',
             image: './images/schneider_agua.jpg'
         },
         {
