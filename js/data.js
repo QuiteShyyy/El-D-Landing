@@ -170,10 +170,10 @@ const PIZZERIA_DATA = {
         // FAYNA
         {
             id: 20,
-            name: 'Fayna',
+            name: 'Fayna Simple',
             category: 'Fayna',
-            description: 'Fayna simple de queso',
-            price: 'Grande $8.500 | Mediana $6.000',
+            description: 'Fayna simple',
+            price: '$2.500',
             image: './images/faina_rellena.jpg'
         },
         {
@@ -181,7 +181,7 @@ const PIZZERIA_DATA = {
             name: 'Fayna Rellena',
             category: 'Fayna',
             description: 'Fayna rellena de jamón y queso',
-            price: 'Grande $10.500 | Mediana $7.500',
+            price: '$2.500',
             image: './images/faina_rellena.jpg'
         },
         
@@ -256,8 +256,8 @@ const PIZZERIA_DATA = {
             id: 30,
             name: 'Coca Cola',
             category: 'Bebidas',
-            description: 'Refresco Coca Cola',
-            price: '250ml $2.000 | 1L $5.500',
+            description: 'Refresco Coca Cola Original 2.25lt',
+            price: '$5.000',
             image: './images/coca225.jpg'
         },
         {
