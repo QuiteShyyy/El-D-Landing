@@ -131,35 +131,40 @@ const PIZZERIA_DATA = {
             name: 'Queso Extra',
             category: 'Extras para Pizza',
             description: 'Porción extra de mozzarella',
-            price: '$3.500'
+            price: '$3.500',
+            image: './images/muzzarella.jpg'
         },
         {
             id: 16,
             name: 'Jamón Extra',
             category: 'Extras para Pizza',
             description: 'Jamón cocido adicional',
-            price: '$4.000'
+            price: '$4.000',
+            image: './images/jamon.jpg'
         },
         {
             id: 17,
             name: 'Calabresa Extra',
             category: 'Extras para Pizza',
             description: 'Calabresa adicional',
-            price: '$4.500'
+            price: '$4.500',
+            image: './images/calabresa.jpg'
         },
         {
             id: 18,
             name: 'Huevo Extra',
             category: 'Extras para Pizza',
             description: 'Huevo duro adicional',
-            price: '$2.500'
+            price: '$2.500',
+            image: './images/huevo.jpg'
         },
         {
             id: 19,
             name: 'Morrón Extra',
             category: 'Extras para Pizza',
             description: 'Morrón adicional',
-            price: '$3.000'
+            price: '$3.000',
+            image: './images/morron.jpg'
         },
         
         // FAYNA
@@ -168,7 +173,8 @@ const PIZZERIA_DATA = {
             name: 'Fayna',
             category: 'Fayna',
             description: 'Fayna simple de queso',
-            price: 'Grande $8.500 | Mediana $6.000'
+            price: 'Grande $8.500 | Mediana $6.000',
+            image: './images/faina_rellena.jpg'
         },
         {
             id: 21,
