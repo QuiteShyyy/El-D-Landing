@@ -251,21 +251,32 @@ const PIZZERIA_DATA = {
             name: 'Coca Cola',
             category: 'Bebidas',
             description: 'Refresco Coca Cola',
-            price: '250ml $2.000 | 1L $5.500'
+            price: '250ml $2.000 | 1L $5.500',
+            image: './images/coca225.jpg'
         },
         {
             id: 31,
-            name: 'Agua Mineral',
+            name: 'Agua Mineral Schneider',
             category: 'Bebidas',
-            description: 'Agua mineral con gas o sin gas',
-            price: '500ml $2.000 | 1.5L $4.500'
+            description: 'Agua mineral Schneider con gas o sin gas',
+            price: '500ml $2.000 | 1.5L $4.500',
+            image: './images/schneider_agua.jpg'
         },
         {
             id: 32,
-            name: 'Jugo Levite',
+            name: 'Jugo Levite Manzana',
             category: 'Bebidas',
-            description: 'Jugo de frutas variado',
-            price: '1.5L $3.500'
+            description: 'Jugo de manzana Levite',
+            price: '1.5L $3.500',
+            image: './images/levite_manzana.webp'
+        },
+        {
+            id: 33,
+            name: 'Jugo Levite Pera',
+            category: 'Bebidas',
+            description: 'Jugo de pera Levite',
+            price: '1.5L $3.500',
+            image: './images/levite_pera.webp'
         }
     ],
     
