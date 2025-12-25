@@ -32,56 +32,80 @@
     "pizzas": [
       {
         "nombre": "Muzzarella",
-        "descripcion": "Tomate, queso mozzarella",
+        "descripcion": "Salsa de tomate, muzzarella, aceitunas verdes",
         "precio_grande": "$13.500",
         "precio_individual": "$7.000"
       },
       {
         "nombre": "Muzzarella c/ Huevo",
-        "descripcion": "Muzzarella con huevos duros",
+        "descripcion": "Salsa de tomate, muzzarella, huevo duro, aceitunas verdes",
         "precio_grande": "$15.500",
         "precio_individual": "$8.000"
       },
       {
         "nombre": "Muzzarella c/ Morrón",
-        "descripcion": "Muzzarella con morrones frescos",
+        "descripcion": "Salsa de tomate, muzzarella, morrones frescos, aceitunas verdes",
         "precio_grande": "$19.700",
         "precio_individual": "$10.000"
       },
       {
-        "nombre": "Fugazetta",
-        "descripcion": "Cebolla de verdeo, tomate y queso",
+        "nombre": "Fugazzeta",
+        "descripcion": "Salsa de tomate, cebolla, muzzarella, aceitunas verdes",
         "precio_grande": "$15.200",
         "precio_individual": "$7.800"
       },
       {
-        "nombre": "Fugazetta c/ Jamón",
-        "descripcion": "Fugazetta tradicional con jamón cocido",
+        "nombre": "Fugazzeta c/ Jamón",
+        "descripcion": "Salsa de tomate, cebolla, muzzarella, jamón cocido, aceitunas verdes",
         "precio_grande": "$19.600",
         "precio_individual": "$10.000"
       },
       {
         "nombre": "Jamón",
-        "descripcion": "Tomate, mozzarella y jamón cocido",
+        "descripcion": "Salsa de tomate, muzzarella, jamón cocido, aceitunas verdes",
         "precio_grande": "$18.000",
         "precio_individual": "$9.200"
       },
       {
         "nombre": "Jamón y Huevo",
-        "descripcion": "Jamón cocido y huevos duros",
+        "descripcion": "Salsa de tomate, muzzarella, jamón, huevo duro, aceitunas verdes",
         "precio_grande": "$22.000",
         "precio_individual": "$11.200"
       },
       {
         "nombre": "Napolitana",
-        "descripcion": "Tomate, mozzarella, anchoas y orégano",
+        "descripcion": "Salsa de tomate, muzzarella, tomates en rodajas, especies",
         "precio_grande": "$18.000",
         "precio_individual": "$9.200"
       },
       {
         "nombre": "Napolitana c/ Jamón",
-        "descripcion": "Pizza napolitana con jamón cocido",
+        "descripcion": "Salsa de tomate, muzzarella, tomates en rodajas, jamón cocido, especies, aceitunas verdes",
         "precio_grande": "$25.000"
+      },
+      {
+        "nombre": "Pepperoni",
+        "descripcion": "Salsa de tomate, peperoni y muzzarella, aceitunas verdes",
+        "precio_grande": "$20.000",
+        "precio_individual": "$10.200"
+      },
+      {
+        "nombre": "Calabresa",
+        "descripcion": "Salsa de tomate, muzzarella, calabreza, aceitunas verdes",
+        "precio_grande": "$20.500",
+        "precio_individual": "$10.500"
+      },
+      {
+        "nombre": "Roquefort",
+        "descripcion": "Salsa de tomate, muzzarella, roquefort, aceitunas verdes",
+        "precio_grande": "$22.000",
+        "precio_individual": "$11.200"
+      },
+      {
+        "nombre": "Jamón y Morron",
+        "descripcion": "Salsa de tomate, muzzarella, jamón, morrones, aceitunas verdes",
+        "precio_grande": "$21.000",
+        "precio_individual": "$10.800"
       }
     ],
     "pizzas_combinadas": [
@@ -127,8 +151,8 @@
     "fayna": [
       {
         "nombre": "Fayna Simple",
-        "descripcion": "Fayna simple de queso",
-        "precio": "$2.000"
+        "descripcion": "Fayna simple",
+        "precio": "$2.500"
       },
       {
         "nombre": "Fayna Rellena JyQ",
@@ -137,6 +161,16 @@
       }
     ],
     "empanadas": [
+      {
+        "nombre": "Humita",
+        "descripcion": "Salsa blanca y choclo en grano amarillo",
+        "precio": "$2.500"
+      },
+      {
+        "nombre": "Roquefort",
+        "descripcion": "Roquefort y queso muzzarella",
+        "precio": "$2.500"
+      },
       {
         "nombre": "Carne Suave",
         "descripcion": "Carne picada con cebolla, morrones y especias",
@@ -160,6 +194,11 @@
       {
         "nombre": "Caprese",
         "descripcion": "Queso mozzarella, albahaca y tomates",
+        "precio": "$2.500"
+      },
+      {
+        "nombre": "Bolognesa",
+        "descripcion": "Canasita rellena de carne con salsa boloñesa",
         "precio": "$2.500"
       }
     ],
