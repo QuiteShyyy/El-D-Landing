@@ -11,16 +11,16 @@ const PIZZERIA_DATA = {
             id: 1,
             name: 'Muzzarella',
             category: 'Pizzas',
-            description: 'Tomate, queso mozzarella - La clásica porteña',
+            description: 'Salsa de tomates, muzzarella, aceitunas verdes',
             price: 'Grande $13.500 | Individual $7.000',
             image: './images/muzza_gd.jpg',
             imageAlt: './images/muzza_ind.jpg'
         },
         {
             id: 2,
-            name: 'Fugazza',
+            name: 'Fugazzeta',
             category: 'Pizzas',
-            description: 'Cebolla de verdeo, tomate y queso',
+            description: 'Cebolla, muzzarella, aceitunas verdes',
             price: 'Grande $15.200 | Individual $7.800',
             image: './images/fugazza_gd.jpg'
         },
@@ -28,7 +28,7 @@ const PIZZERIA_DATA = {
             id: 3,
             name: 'Napolitana',
             category: 'Pizzas',
-            description: 'Tomate, mozzarella, anchoas y orégano',
+            description: 'Salsa de tomates, muzzarella, tomates en rodajas, aceitunas verdes',
             price: 'Grande $18.000 | Individual $9.200',
             image: './images/napo_gd.jpg'
         },
@@ -36,24 +36,24 @@ const PIZZERIA_DATA = {
             id: 4,
             name: 'Jamón',
             category: 'Pizzas',
-            description: 'Tomate, mozzarella y jamón cocido',
+            description: 'Salsa de tomates, muzzarella, jamón cocido, aceitunas verdes',
             price: 'Grande $16.500 | Individual $8.500',
             image: './images/jamon_gd.jpg'
         },
         {
             id: 5,
-            name: 'Pepperoni',
+            name: 'Peperoni',
             category: 'Pizzas',
-            description: 'Pepperoni y queso',
+            description: 'Salsa de tomates, muzzarella, peperoni en rodajas',
             price: 'Grande $18.000 | Individual $9.200',
             image: './images/pepperoni_gd.jpg',
             imageAlt: './images/pepperoni_ind.jpg'
         },
         {
             id: 6,
-            name: 'Calabresa',
+            name: 'Calabreza',
             category: 'Pizzas',
-            description: 'Calabresa y queso',
+            description: 'Salsa de tomates, muzzarella, longaniza calabreza, aceitunas verdes',
             price: 'Grande $17.500 | Individual $9.000',
             image: './images/calabreza_gd.jpg',
             imageAlt: './images/calabreza_ind.jpg'
@@ -62,7 +62,7 @@ const PIZZERIA_DATA = {
             id: 7,
             name: 'Roquefort',
             category: 'Pizzas',
-            description: 'Queso roquefort, nueces y cebolla',
+            description: 'Salsa de tomates, muzzarella, queso azul, aceitunas verdes',
             price: 'Grande $19.000 | Individual $9.800',
             image: './images/roquefort_gd.jpg'
         },
@@ -70,7 +70,7 @@ const PIZZERIA_DATA = {
             id: 8,
             name: 'Jamón y Morrón',
             category: 'Pizzas',
-            description: 'Jamón, morrón y cebolla',
+            description: 'Salsa de tomates, muzzarella, jamón cocido, morrón, aceitunas verdes',
             price: 'Grande $17.800 | Individual $9.200',
             image: './images/jamonymorron_gd.jpg'
         },
@@ -78,7 +78,7 @@ const PIZZERIA_DATA = {
             id: 9,
             name: 'Huevo y Jamón',
             category: 'Pizzas',
-            description: 'Jamón cocido y huevos duros',
+            description: 'Salsa de tomates, muzzarella, jamón cocido, huevo, aceitunas verdes',
             price: 'Grande $19.500 | Individual $10.000',
             image: './images/huevo_y_jamon_gd.jpg'
         },
@@ -151,7 +151,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Carne a Cuchillo',
             category: 'Empanadas',
             description: 'Carne a cuchillo, cebolla y pimiento',
-            price: '$2.500',
+            price: '$2.800',
             image: './images/carne_cuchillo.jpg'
         },
         {
@@ -159,7 +159,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Diabla',
             category: 'Empanadas',
             description: 'Calabresa, queso y especias',
-            price: '$2.500',
+            price: '$2.800',
             image: './images/diabla.jpg'
         },
         {
@@ -167,7 +167,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Humita',
             category: 'Empanadas',
             description: 'Salsa blanca y choclo en grano amarillo',
-            price: '$2.500',
+            price: '$2.800',
             image: './images/humita.jpg'
         },
         {
@@ -175,7 +175,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Roquefort',
             category: 'Empanadas',
             description: 'Roquefort y queso muzzarella',
-            price: '$2.500',
+            price: '$2.800',
             image: './images/roquefort.jpg'
         },
         {
@@ -183,7 +183,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Carne Suave',
             category: 'Empanadas',
             description: 'Carne picada con cebolla, morrones y especias',
-            price: '$2.500',
+            price: '$2.800',
             image: './images/carne_suave.jpg'
         },
         {
@@ -191,7 +191,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Pollo',
             category: 'Empanadas',
             description: 'Suprema de pollo con finas hierbas, cebolla y morrones rehogada',
-            price: '$2.500',
+            price: '$2.800',
             image: './images/pollo.jpg'
         },
         {
@@ -199,7 +199,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Jamón y Queso',
             category: 'Empanadas',
             description: 'Jamón cocido y queso mozzarella',
-            price: '$2.500',
+            price: '$2.800',
             image: './images/jamonyqueso.jpg'
         },
         {
@@ -207,7 +207,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Caprese',
             category: 'Empanadas',
             description: 'Queso mozzarella, albahaca y tomates',
-            price: '$2.500',
+            price: '$2.800',
             image: './images/capresse.jpg'
         },
         {
@@ -215,7 +215,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Bolognesa',
             category: 'Empanadas',
             description: 'Canasita rellena de carne con salsa boloñesa',
-            price: '$2.500',
+            price: '$2.800',
             image: './images/bolognesa.jpeg'
         },
         
