@@ -133,7 +133,7 @@ const PIZZERIA_DATA = {
             name: 'Fayna Simple',
             category: 'Fayna',
             description: 'Fayna simple',
-            price: '$2.500',
+            price: '$2.000',
             image: './images/faina_rellena.jpg'
         },
         {
@@ -151,7 +151,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Carne a Cuchillo',
             category: 'Empanadas',
             description: 'Carne a cuchillo, cebolla y pimiento',
-            price: '$2.800',
+            price: '$2.500',
             image: './images/carne_cuchillo.jpg'
         },
         {
@@ -159,7 +159,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Diabla',
             category: 'Empanadas',
             description: 'Calabresa, queso y especias',
-            price: '$2.800',
+            price: '$2.500',
             image: './images/diabla.jpg'
         },
         {
@@ -167,7 +167,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Humita',
             category: 'Empanadas',
             description: 'Salsa blanca y choclo en grano amarillo',
-            price: '$2.800',
+            price: '$2.500',
             image: './images/humita.jpg'
         },
         {
@@ -175,7 +175,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Roquefort',
             category: 'Empanadas',
             description: 'Roquefort y queso muzzarella',
-            price: '$2.800',
+            price: '$2.500',
             image: './images/roquefort.jpg'
         },
         {
@@ -183,7 +183,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Carne Suave',
             category: 'Empanadas',
             description: 'Carne picada con cebolla, morrones y especias',
-            price: '$2.800',
+            price: '$2.500',
             image: './images/carne_suave.jpg'
         },
         {
@@ -191,7 +191,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Pollo',
             category: 'Empanadas',
             description: 'Suprema de pollo con finas hierbas, cebolla y morrones rehogada',
-            price: '$2.800',
+            price: '$2.500',
             image: './images/pollo.jpg'
         },
         {
@@ -199,7 +199,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Jamón y Queso',
             category: 'Empanadas',
             description: 'Jamón cocido y queso mozzarella',
-            price: '$2.800',
+            price: '$2.500',
             image: './images/jamonyqueso.jpg'
         },
         {
@@ -207,7 +207,7 @@ const PIZZERIA_DATA = {
             name: 'Empanada de Caprese',
             category: 'Empanadas',
             description: 'Queso mozzarella, albahaca y tomates',
-            price: '$2.800',
+            price: '$2.500',
             image: './images/capresse.jpg'
         },
         {
