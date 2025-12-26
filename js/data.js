@@ -233,7 +233,7 @@ const PIZZERIA_DATA = {
             name: 'Cerveza Schneider',
             category: 'Bebidas',
             description: 'Cerveza Schneider Premium - Bebida alcohólica',
-            price: '340ml $2.500 | 500ml $3.500',
+            price: '473ml $1.600',
             image: './images/schneider.png'
         },
         {
