@@ -143,12 +143,17 @@
         padding: var(--spacing-md);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        transition: max-height 0.3s ease, visibility 0.3s ease;
+        border-bottom: 1px solid #f0f0f0;
+        visibility: hidden;
+        pointer-events: none;
     }
 
     .navbar__menu.active {
         max-height: 300px;
         box-shadow: var(--shadow-lg);
+        visibility: visible;
+        pointer-events: auto;
     }
 
     .navbar__toggle {
