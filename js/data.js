@@ -92,7 +92,7 @@ const PIZZERIA_DATA = {
             category: 'Prepizzas',
             description: '3 Pre-pizzas de tomate Grande (8 porciones)',
             price: '$5.000',
-            image: './images/prepizza_tomate.jpg'
+            image: './images/combo1.jpeg'
         },
         {
             id: 32,
@@ -100,7 +100,7 @@ const PIZZERIA_DATA = {
             category: 'Prepizzas',
             description: '2 Pre-pizzas de tomate + 500 grs de muzzarella',
             price: '$9.000',
-            image: './images/prepizza_tomate.jpg'
+            image: './images/combo2.jpeg'
         },
         {
             id: 33,
@@ -108,7 +108,7 @@ const PIZZERIA_DATA = {
             category: 'Prepizzas',
             description: '2 Pre-pizzas de tomate + 1 pote de salsa + 500 grs de muzzarella',
             price: '$12.000',
-            image: './images/prepizza_tomate.jpg'
+            image: './images/combo3.jpeg'
         },
         {
             id: 34,
@@ -116,7 +116,7 @@ const PIZZERIA_DATA = {
             category: 'Prepizzas',
             description: '1 Pre-pizza de tomate + 1 Pre-pizza de cebolla + 500 grs de muzzarella',
             price: '$10.000',
-            image: './images/prepizza_cebolla.jpg',
+            image: './images/combomixto.jpeg',
             note: 'Disponible viernes, sábado y domingo (V, S, D)'
         },
         {
@@ -125,7 +125,7 @@ const PIZZERIA_DATA = {
             category: 'Prepizzas',
             description: 'Pre-pizza Grande de tomate (8 porciones)',
             price: '$2.000',
-            image: './images/prepizza_tomate.jpg'
+            image: './images/preppizzatomate.jpeg'
         },
         {
             id: 36,
@@ -133,7 +133,7 @@ const PIZZERIA_DATA = {
             category: 'Prepizzas',
             description: 'Pre-pizza Grande de cebolla (8 porciones)',
             price: '$2.200',
-            image: './images/prepizza_cebolla.jpg'
+            image: './images/preppizacebolla.jpeg'
         },
         {
             id: 37,
@@ -141,7 +141,7 @@ const PIZZERIA_DATA = {
             category: 'Prepizzas',
             description: 'Pre-pizza Grande de tomate (8 porciones) - Venta por mayor',
             price: '$1.200 x unidad',
-            image: './images/prepizza_tomate.jpg',
+            image: './images/prepizzatomateMayor.jpeg',
             note: 'Mínimo 20 unidades. Requiere aviso previo de 24 horas'
         },
         {
@@ -150,7 +150,7 @@ const PIZZERIA_DATA = {
             category: 'Prepizzas',
             description: 'Pre-pizza Grande de cebolla (8 porciones) - Venta por mayor',
             price: '$1.300 x unidad',
-            image: './images/prepizza_cebolla.jpg',
+            image: './images/prepizzacebollaMayor.jpeg',
             note: 'Mínimo 20 unidades. Requiere aviso previo de 24 horas'
         },
         
