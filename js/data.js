@@ -3,7 +3,7 @@
    ============================================ */
 // Versión: 2025-12-25 v3
 const PIZZERIA_DATA = {
-    categories: ['Todas', 'Pizzas', 'Pizzas Combinadas', 'Extras para Pizza', 'Fayna', 'Empanadas', 'Bebidas'],
+    categories: ['Todas', 'Pizzas', 'Pizzas Combinadas', 'Prepizzas', 'Extras para Pizza', 'Fayna', 'Empanadas', 'Bebidas'],
     
     menu: [
         // PIZZAS
@@ -85,7 +85,75 @@ const PIZZERIA_DATA = {
         
         // PIZZAS COMBINADAS
         
-        // EXTRAS PARA PIZZA
+        // PREPIZZAS - COMBOS Y VENTA
+        {
+            id: 31,
+            name: 'Combo 1 - 3 Prepizzas de Tomate',
+            category: 'Prepizzas',
+            description: '3 Pre-pizzas de tomate Grande (8 porciones)',
+            price: '$5.000',
+            image: './images/prepizza_tomate.jpg'
+        },
+        {
+            id: 32,
+            name: 'Combo 2 - 2 Prepizzas + 500g Muzzarella',
+            category: 'Prepizzas',
+            description: '2 Pre-pizzas de tomate + 500 grs de muzzarella',
+            price: '$9.000',
+            image: './images/prepizza_tomate.jpg'
+        },
+        {
+            id: 33,
+            name: 'Combo 3 - 2 Prepizzas + Salsa + 500g Muzzarella',
+            category: 'Prepizzas',
+            description: '2 Pre-pizzas de tomate + 1 pote de salsa + 500 grs de muzzarella',
+            price: '$12.000',
+            image: './images/prepizza_tomate.jpg'
+        },
+        {
+            id: 34,
+            name: 'Combo Mixto - 1 Tomate + 1 Cebolla + 500g Muzzarella',
+            category: 'Prepizzas',
+            description: '1 Pre-pizza de tomate + 1 Pre-pizza de cebolla + 500 grs de muzzarella',
+            price: '$10.000',
+            image: './images/prepizza_cebolla.jpg',
+            note: 'Disponible viernes, sábado y domingo (V, S, D)'
+        },
+        {
+            id: 35,
+            name: 'Prepizza Grande de Tomate',
+            category: 'Prepizzas',
+            description: 'Pre-pizza Grande de tomate (8 porciones)',
+            price: '$2.000',
+            image: './images/prepizza_tomate.jpg'
+        },
+        {
+            id: 36,
+            name: 'Prepizza Grande de Cebolla',
+            category: 'Prepizzas',
+            description: 'Pre-pizza Grande de cebolla (8 porciones)',
+            price: '$2.200',
+            image: './images/prepizza_cebolla.jpg'
+        },
+        {
+            id: 37,
+            name: 'Prepizza Grande de Tomate - Mayor',
+            category: 'Prepizzas',
+            description: 'Pre-pizza Grande de tomate (8 porciones) - Venta por mayor',
+            price: '$1.200 x unidad',
+            image: './images/prepizza_tomate.jpg',
+            note: 'Mínimo 20 unidades. Requiere aviso previo de 24 horas'
+        },
+        {
+            id: 38,
+            name: 'Prepizza Grande de Cebolla - Mayor',
+            category: 'Prepizzas',
+            description: 'Pre-pizza Grande de cebolla (8 porciones) - Venta por mayor',
+            price: '$1.300 x unidad',
+            image: './images/prepizza_cebolla.jpg',
+            note: 'Mínimo 20 unidades. Requiere aviso previo de 24 horas'
+        },
+        
         {
             id: 12,
             name: 'Queso Extra',
