@@ -211,6 +211,11 @@
         "precio": "$2.500"
       },
       {
+        "nombre": "Carne Picante",
+        "descripcion": "Carne picada con cebolla morrones, huevo y especias",
+        "precio": "$2.500"
+      },
+      {
         "nombre": "Pollo",
         "descripcion": "Suprema de pollo con finas hierbas, cebolla y morrones rehogada",
         "precio": "$2.500"
@@ -218,6 +223,16 @@
       {
         "nombre": "Jamón y Queso",
         "descripcion": "Jamón cocido y queso mozzarella",
+        "precio": "$2.500"
+      },
+      {
+        "nombre": "Cebolla y Queso",
+        "descripcion": "Verdeo, queso muzza, orégano",
+        "precio": "$2.500"
+      },
+      {
+        "nombre": "Verdura",
+        "descripcion": "Acelga, salsa blanca, queso y hierbas",
         "precio": "$2.500"
       },
       {
