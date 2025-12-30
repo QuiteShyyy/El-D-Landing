@@ -286,6 +286,30 @@ const PIZZERIA_DATA = {
             price: '$2.800',
             image: './images/bolognesa.jpeg'
         },
+        {
+            id: 28,
+            name: 'Empanada de Carne Picante',
+            category: 'Empanadas',
+            description: 'Carne picada con cebolla morrones, huevo y especias',
+            price: '$2.500',
+            image: './images/empanada.jpeg'
+        },
+        {
+            id: 29,
+            name: 'Empanada de Cebolla y Queso',
+            category: 'Empanadas',
+            description: 'Verdeo, queso muzza, orégano',
+            price: '$2.500',
+            image: './images/empanada.jpeg'
+        },
+        {
+            id: 30,
+            name: 'Empanada de Verdura',
+            category: 'Empanadas',
+            description: 'Acelga, salsa blanca, queso y hierbas',
+            price: '$2.500',
+            image: './images/empanada.jpeg'
+        },
         
         // BEBIDAS
         {
