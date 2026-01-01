@@ -262,3 +262,25 @@
         font-size: 0.9rem;
     }
 }
+/* Store Disclaimer */
+.store-disclaimer {
+    padding: 30px 20px;
+    background: #fff3cd;
+    border-top: 2px solid #ffc107;
+    border-bottom: 2px solid #ffc107;
+    margin: 40px 0;
+}
+
+.store-disclaimer__text {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #856404;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.store-disclaimer__text strong {
+    font-weight: 600;
+    color: #664d03;
+}
